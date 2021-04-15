@@ -1,0 +1,139 @@
+#!/bin/bash
+# Purpose:      Generate A Blank Jekyll Blog Post
+# Method:	Use a Bash-driven Template Generator
+#
+# Section_01:	Bash Function to Take User Input
+# Author:	HannhM; #Freenode
+# Date:		Sat 10 Apr 2021 13:00:00 NZST
+#
+# Section_02:	Import Front Matter to Blog Post
+# Author:       Quid Agis under GPL v2.0+
+# Date:         Fri 02 Apr 2021 14:37:48 NZST
+# Ver:          0.020
+# ------------------------------------------
+
+
+#   Section_01
+#
+#   declare the function
+
+_functioname ()
+{
+    local   _year _month _day _title _file _author _tag1 _tag2 tag3 _time
+
+#   state purpose of script
+
+    printf  "\n"
+    printf  "# Generate a new Blog Post using READLINE in Bash \n"
+
+#   state the required file format
+
+    printf  "\n"
+    printf  "# The filename must be: 'YYYY-MM-DD-this-is-a-new-post' \n"
+
+#   get the Year
+
+    printf  "\n"
+    read -p "# What year (YYYY) ? " _year
+    # printf  "\n"
+
+#   get the Month
+
+    printf  "\n"
+    read -p "# What month (MM) ? " _month
+    # printf  "\n"
+
+#   get the Day
+
+    printf  "\n"
+    read -p "# What day (DD) ? " _day
+    # printf  "\n"
+
+#   get the file name
+
+    printf  "\n"
+    read -p "# What post title (This is a new post) ? " _title
+    # printf  "\n"
+
+    _title="${_title// /-}"
+
+#   test it
+
+    printf  "\n"
+    printf  "The new blog post filename is: ${_year}-${_month}-${_day}-${_title}.md"
+    # printf  "\n"
+
+#   build the filename
+
+    _file="/home/quid/Git/quid-agis.github.io/_posts/${_year}-${_month}-${_day}-${_title}.md"
+    touch ${_file}
+
+##  Section_02
+##
+##  import the front matter
+
+#   set the author
+
+    printf  "\n"
+    read -p "# Who is the author (admin / quid) ? " _author
+    # printf  "\n"
+
+#   set tag 1
+
+    printf  "\n"
+    read -p "# What is tag 1 ? " _tag1
+    # printf  "\n"
+
+#   set tag 2
+
+    printf  "\n"
+    read -p "# What is tag 2 ? " _tag2
+    # printf  "\n"
+
+#   set tag 3
+
+    printf  "\n"
+    read -p "# What is tag 3 ? " _tag3
+    # printf  "\n"
+
+#   set the time
+
+    printf  "\n"
+    read -p "# What is the post time (hh:mm am / pm) ? " _time
+    # printf  "\n"
+
+# << -- all above works : OK -->
+# << -- all below needs editing, research pretty print using PRINTF : OK -->
+# << -- TODO: Inject _time _tag1 _tag2 _tag3 into HTML <ul>
+
+    _file="/home/quid/Git/quid-agis.github.io/_posts/${_year}-${_month}-${_day}-${_title}.md"
+    echo "The new post is: ${_file}"
+
+    echo "---" >> ${_file}
+    echo "layout: post" >> ${_file}
+    echo "author: ${_author}" >> ${_file}
+    echo "---" >> ${_file}
+    echo "" >> ${_file}
+    echo "- time: ${_time} NZST" >> ${_file}
+    echo "- tags: ${_tag1} ${_tag2} ${_tag3}" >> ${_file}
+    echo "" >> ${_file}
+    echo "" >> ${_file}
+    echo "" >> ${_file}
+    echo "" >> ${_file}
+    echo "" >> ${_file}
+    echo "" >> ${_file}
+    echo "" >> ${_file}
+    echo "" >> ${_file}
+    echo "" >> ${_file}
+    echo "" >> ${_file}
+
+# Choose your Editor of choice
+/usr/bin/nano ${_file}
+# /usr/bin/vim ${_file}
+
+}
+
+
+_functioname
+
+# EOF
