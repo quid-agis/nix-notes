@@ -92,8 +92,8 @@ alias pmm='ping router'
 
 ## QUIDAGIS
 
-alias qab='cp -rv --remove-destination ~/Git/quid-agis.github.io/ ~/Git/backup_quidagis/'
-alias qad='rm -rf ~/Git/backup_quidagis/quid-agis.github.io/'
+alias qab='cp -rv --remove-destination ~/Git/quid-agis.github.io/ ~/Documents/git/backup_quid-agis/'
+alias qad='rm -rf ~/Documents/git/backup_quid-agis/quid-agis.github.io/'
 alias qag='/bin/bash /home/quid/.bin/jekyll_post_generator.sh'
 alias qak='/usr/bin/nano /home/quid/.bin/jekyll_post_generator.sh'
 alias qan='cp ~/Git/doc/template_post.md ~/Git/quid-agis.github.io/_posts/ && nano ~/Git/quid-agis.github.io/_posts/template_post.md'
