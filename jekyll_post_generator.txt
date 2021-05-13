@@ -8,8 +8,8 @@
 #
 # Section_02:	Import Front Matter to Blog Post
 # Author:       Quid Agis under GPL v2.0+
-# Date:         Fri 02 Apr 2021 14:37:48 NZST
-# Ver:          0.020
+# Date:         Thu 13 May 2021 11:34:48 NZST
+# Ver:          0.025
 # ------------------------------------------
 
 
@@ -102,8 +102,6 @@ _functioname ()
     read -p "# What is the post time (hh:mm am / pm) ? " _time
     # printf  "\n"
 
-# << -- all above works : OK -->
-# << -- all below needs editing, research pretty print using PRINTF : OK -->
 # << -- TODO: Inject _time _tag1 _tag2 _tag3 into HTML <ul>
 
     _file="/home/quid/Git/quid-agis.github.io/_posts/${_year}-${_month}-${_day}-${_title}.md"

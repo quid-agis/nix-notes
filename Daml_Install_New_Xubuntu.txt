@@ -1,0 +1,57 @@
+# Curl
+$ curl --version
+curl 7.68.0 (x86_64-pc-linux-gnu)
+
+# Systems Building Packages
+
+# Git
+$ git --version
+git version 2.25.1
+
+# Node.js
+
+# Note: On Ubuntu, the #ROOT user is not enabled by default, therefore you 
+# require to set a 'passwd' for the #ROOT user to continue
+$ sudo passwd root
+# Verify #ROOT user is enabled
+$ su root
+Password:
+root@host:/home/quid#
+root@host:/home/quid# whoami
+root
+$ node --version
+v15.11.0
+
+# Java
+$ java --version
+openjdk 11.0.10 2021-01-19
+OpenJDK Runtime Environment (build 11.0.10+9-Ubuntu-0ubuntu1.20.04)
+OpenJDK 64-Bit Server VM (build 11.0.10+9-Ubuntu-0ubuntu1.20.04, mixed mode, sharing)
+
+# VS Code
+
+# Backup the 'sources.list' file
+$ sudo cp -v /etc/apt/sources.list /etc/apt/sources.list.bak
+$ code --version
+1.54.2
+fd6f3bce6709b121a895d042d343d71f317d74e7
+x64
+
+# Daml
+$ firefox https://github.com/digital-asset/daml/releases/tag/v1.11.0
+$ cd ~/Downloads
+$ wget https://github.com/digital-asset/daml/releases/download/v1.11.0/daml-sdk-1.11.0-linux.tar.gz
+$ wget https://github.com/digital-asset/daml/releases/download/v1.11.0/daml-sdk-1.11.0-linux.tar.gz.asc
+
+# Check if GnuPG is installed
+$ gpg --version
+gpg (GnuPG) 2.2.19
+libgcrypt 1.8.5
+Copyright (C) 2019 Free Software Foundation, Inc.
+
+# Verify the DAML installation has been successful
+$ daml version
+SDK versions:
+  1.11.0  (default SDK version for new projects)
+
+# If there is any feedback, please reply to this message thread.

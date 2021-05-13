@@ -1,0 +1,107 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential dkms
+  dpkg-dev fakeroot g++ g++-8 gcc gcc-8 libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libbinutils
+  libc-dev-bin libc6-dev libcc1-0 libdpkg-perl libfakeroot
+  libfile-fcntllock-perl libgcc-8-dev libitm1 liblsan0 libmpx2 libstdc++-8-dev
+  libtsan0 libubsan1 linux-compiler-gcc-8-x86 linux-headers-4.19.0-14-amd64
+  linux-headers-4.19.0-14-common linux-headers-amd64 linux-kbuild-4.19
+  linux-libc-dev make manpages-dev patch
+Suggested packages:
+  binutils-doc python3-apport menu debian-keyring g++-multilib g++-8-multilib
+  gcc-8-doc libstdc++6-8-dbg gcc-multilib autoconf automake libtool flex bison
+  gdb gcc-doc gcc-8-multilib gcc-8-locales libgcc1-dbg libgomp1-dbg
+  libitm1-dbg libatomic1-dbg libasan5-dbg liblsan0-dbg libtsan0-dbg
+  libubsan1-dbg libmpx2-dbg libquadmath0-dbg glibc-doc git bzr libstdc++-8-doc
+  make-doc ed diffutils-doc
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential dkms
+  dpkg-dev fakeroot g++ g++-8 gcc gcc-8 libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libbinutils
+  libc-dev-bin libc6-dev libcc1-0 libdpkg-perl libfakeroot
+  libfile-fcntllock-perl libgcc-8-dev libitm1 liblsan0 libmpx2 libstdc++-8-dev
+  libtsan0 libubsan1 linux-compiler-gcc-8-x86 linux-headers-4.19.0-14-amd64
+  linux-headers-4.19.0-14-common linux-headers-amd64 linux-kbuild-4.19
+  linux-libc-dev make manpages-dev patch r8168-dkms
+0 upgraded, 39 newly installed, 0 to remove and 0 not upgraded.
+Inst binutils-common (2.31.1-16 Debian:10.8/stable [amd64])
+Inst libbinutils (2.31.1-16 Debian:10.8/stable [amd64])
+Inst binutils-x86-64-linux-gnu (2.31.1-16 Debian:10.8/stable [amd64])
+Inst binutils (2.31.1-16 Debian:10.8/stable [amd64])
+Inst libc-dev-bin (2.28-10 Debian:10.8/stable [amd64])
+Inst linux-libc-dev (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Inst libc6-dev (2.28-10 Debian:10.8/stable [amd64])
+Inst libcc1-0 (8.3.0-6 Debian:10.8/stable [amd64])
+Inst libitm1 (8.3.0-6 Debian:10.8/stable [amd64])
+Inst libasan5 (8.3.0-6 Debian:10.8/stable [amd64])
+Inst liblsan0 (8.3.0-6 Debian:10.8/stable [amd64])
+Inst libtsan0 (8.3.0-6 Debian:10.8/stable [amd64])
+Inst libubsan1 (8.3.0-6 Debian:10.8/stable [amd64])
+Inst libmpx2 (8.3.0-6 Debian:10.8/stable [amd64])
+Inst libgcc-8-dev (8.3.0-6 Debian:10.8/stable [amd64])
+Inst gcc-8 (8.3.0-6 Debian:10.8/stable [amd64])
+Inst gcc (4:8.3.0-1 Debian:10.8/stable [amd64])
+Inst libstdc++-8-dev (8.3.0-6 Debian:10.8/stable [amd64])
+Inst g++-8 (8.3.0-6 Debian:10.8/stable [amd64])
+Inst g++ (4:8.3.0-1 Debian:10.8/stable [amd64])
+Inst make (4.2.1-1.2 Debian:10.8/stable [amd64])
+Inst libdpkg-perl (1.19.7 Debian:10.8/stable [all])
+Inst patch (2.7.6-3+deb10u1 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Inst dpkg-dev (1.19.7 Debian:10.8/stable [all])
+Inst build-essential (12.6 Debian:10.8/stable [amd64])
+Inst dkms (2.6.1-4 Debian:10.8/stable [all])
+Inst libfakeroot (1.23-1 Debian:10.8/stable [amd64])
+Inst fakeroot (1.23-1 Debian:10.8/stable [amd64])
+Inst libalgorithm-diff-perl (1.19.03-2 Debian:10.8/stable [all])
+Inst libalgorithm-diff-xs-perl (0.04-5+b1 Debian:10.8/stable [amd64])
+Inst libalgorithm-merge-perl (0.08-3 Debian:10.8/stable [all])
+Inst libfile-fcntllock-perl (0.22-3+b5 Debian:10.8/stable [amd64])
+Inst linux-compiler-gcc-8-x86 (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Inst linux-headers-4.19.0-14-common (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [all])
+Inst linux-kbuild-4.19 (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Inst linux-headers-4.19.0-14-amd64 (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Inst linux-headers-amd64 (4.19+105+deb10u9 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Inst manpages-dev (4.16-2 Debian:10.8/stable [all])
+Inst r8168-dkms (8.046.00-1 Debian:10.8/stable [all])
+Conf binutils-common (2.31.1-16 Debian:10.8/stable [amd64])
+Conf libbinutils (2.31.1-16 Debian:10.8/stable [amd64])
+Conf binutils-x86-64-linux-gnu (2.31.1-16 Debian:10.8/stable [amd64])
+Conf binutils (2.31.1-16 Debian:10.8/stable [amd64])
+Conf libc-dev-bin (2.28-10 Debian:10.8/stable [amd64])
+Conf linux-libc-dev (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Conf libc6-dev (2.28-10 Debian:10.8/stable [amd64])
+Conf libcc1-0 (8.3.0-6 Debian:10.8/stable [amd64])
+Conf libitm1 (8.3.0-6 Debian:10.8/stable [amd64])
+Conf libasan5 (8.3.0-6 Debian:10.8/stable [amd64])
+Conf liblsan0 (8.3.0-6 Debian:10.8/stable [amd64])
+Conf libtsan0 (8.3.0-6 Debian:10.8/stable [amd64])
+Conf libubsan1 (8.3.0-6 Debian:10.8/stable [amd64])
+Conf libmpx2 (8.3.0-6 Debian:10.8/stable [amd64])
+Conf libgcc-8-dev (8.3.0-6 Debian:10.8/stable [amd64])
+Conf gcc-8 (8.3.0-6 Debian:10.8/stable [amd64])
+Conf gcc (4:8.3.0-1 Debian:10.8/stable [amd64])
+Conf libstdc++-8-dev (8.3.0-6 Debian:10.8/stable [amd64])
+Conf g++-8 (8.3.0-6 Debian:10.8/stable [amd64])
+Conf g++ (4:8.3.0-1 Debian:10.8/stable [amd64])
+Conf make (4.2.1-1.2 Debian:10.8/stable [amd64])
+Conf libdpkg-perl (1.19.7 Debian:10.8/stable [all])
+Conf patch (2.7.6-3+deb10u1 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Conf dpkg-dev (1.19.7 Debian:10.8/stable [all])
+Conf build-essential (12.6 Debian:10.8/stable [amd64])
+Conf dkms (2.6.1-4 Debian:10.8/stable [all])
+Conf libfakeroot (1.23-1 Debian:10.8/stable [amd64])
+Conf fakeroot (1.23-1 Debian:10.8/stable [amd64])
+Conf libalgorithm-diff-perl (1.19.03-2 Debian:10.8/stable [all])
+Conf libalgorithm-diff-xs-perl (0.04-5+b1 Debian:10.8/stable [amd64])
+Conf libalgorithm-merge-perl (0.08-3 Debian:10.8/stable [all])
+Conf libfile-fcntllock-perl (0.22-3+b5 Debian:10.8/stable [amd64])
+Conf linux-compiler-gcc-8-x86 (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Conf linux-headers-4.19.0-14-common (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [all])
+Conf linux-kbuild-4.19 (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Conf linux-headers-4.19.0-14-amd64 (4.19.171-2 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Conf linux-headers-amd64 (4.19+105+deb10u9 Debian:10.8/stable, Debian-Security:10/stable [amd64])
+Conf manpages-dev (4.16-2 Debian:10.8/stable [all])
+Conf r8168-dkms (8.046.00-1 Debian:10.8/stable [all])
