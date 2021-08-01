@@ -2,12 +2,15 @@
 
 alias ..='cd ..'
 alias ad='sudo apt install --dry-run'
+alias adn='sudo apt install --no-install-recommends --dry-run'
 alias ag='sudo apt upgrade'
 alias agd='sudo apt upgrade --dry-run'
+alias agy='sudo apt upgrade -y'
 alias ai='sudo apt install'
 alias ar='sudo apt autoremove'
 alias at='sudo apt dist-upgrade'
 alias au='sudo apt update'
+alias ay='sudo apt install -y'
 alias ba='cp -v ~/.bash_aliases ~/Git/nix-notes/bash_aliases.txt'
 alias bi='cd /home/quid/.bin && clear && pwd && ls -al'
 alias br='cp -v ~/.bashrc ~/Git/nix-notes/bashrc.txt'
@@ -64,11 +67,29 @@ alias xt='/usr/bin/xterm'
 alias xx='/usr/bin/xsel -bc'
 alias ya='/usr/bin/youtube-dl --abort-on-error '
 
+## ERLANG commands
+
+alias rabctldn='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmqctl shutdown'
+alias rabdef='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmq-defaults'
+alias rabdia='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmq-diagnostics'
+alias rabenv='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmq-env'
+alias rabplu='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmq-plugins'
+alias rabque='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmq-queues'
+alias rabserupp='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmq-server'
+alias rabserdet='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmq-server -detached'
+alias rabupg='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmq-upgrade'
+
 ## PROJECT commands
 
 alias pd='cd /home/quid/Projects/daml/ && clear && pwd && ls'
+alias pec='cd /home/quid/Projects/erlang/code && clear && pwd && ls'
+alias ped='cd /home/quid/Projects/erlang/doc && clear && pwd && ls'
 alias ph='cd /home/quid/Projects/haskell/ && clear && pwd && ls'
 alias pj='cd ~/Projects && clear && ls'
+alias pja='cd /home/quid/Projects/api_tests && clear && ls'
+alias prc='cd ~/Projects/r/code && clear && ls -al'
+alias prd='cd ~/Projects/r/doc && clear && ls -al'
+alias pri='cd ~/Projects/r/image && clear && ls -al'
 
 ## MOUNT commands
 
@@ -81,31 +102,45 @@ alias cm2='mount | grep sdc'
 
 ## NETWORK commands
 
-# UNDEVBOX [192.168.1.150]
-alias p50='ping undevbox'
-alias s50='ssh -p 7913 quid@undevbox'
+# RVNMN00 [192.168.1.125]
+alias p00='ping rvnmn00'
+alias s00='ssh -p 7913 quid@rvnmn00'
 
-# DPILEDGER [192.168.1.160]
-alias p60='ping dpiledger'
-alias s60='ssh -p 7913 dietpi@dpiledger'
+# RVNMN01 [192.168.1.150]
+alias p11='ping rvnmn01'
+alias s11='ssh -p 7913 dietpi@rvnmn01'
 
-# DPINODE01 [192.168.1.165]
-alias p65='ping dpinode01'
-alias s65='ssh -p 7913 dietpi@dpinode01'
+# RVNMN02 [192.168.1.160]
+alias p22='ping rvnmn02'
+alias s22='ssh -p 7913 dietpi@rvnmn02'
+
+# RVNMN03 [192.168.1.170]
+alias p33='ping rvnmn03'
+alias s33='ssh -p 7913 dietpi@rvnmn03'
+
+# RVNMN04 [192.168.1.180]
+alias p44='ping rvnmn04'
+alias s44='ssh -p 7913 dietpi@rvnmn04'
+
+# RVNMN05 [192.168.1.190]
+alias p55='ping rvnmn05'
+alias s55='ssh -p 7913 dietpi@rvnmn05'
 
 # ROUTER [192.168.1.254]
 alias pmm='ping router'
+alias prr='ping -c 10 -i 0.25 google.co.nz'
 
 ## QUIDAGIS
 
 alias qab='cp -rv --remove-destination ~/Git/quid-agis.github.io/ ~/Documents/git/backup_quid-agis/'
 alias qad='rm -rf ~/Documents/git/backup_quid-agis/quid-agis.github.io/'
-alias qag='/bin/bash /home/quid/.bin/jekyll_post_generator.sh'
-alias qak='/usr/bin/nano /home/quid/.bin/jekyll_post_generator.sh'
-alias qan='cp ~/Git/doc/template_post.md ~/Git/quid-agis.github.io/_posts/ && nano ~/Git/quid-agis.github.io/_posts/template_post.md'
-alias qap='cd /home/quid/Git/quid-agis.github.io/_posts && nano 2021-03-29-another-small-test.md'
-alias qas='bundle exec jekyll serve --livereload'
-alias qau='bundle update'
 alias qaw='cd ~/Git/quid-agis.github.io && clear && pwd && ls -al'
+# alias qag='/bin/bash /home/quid/.bin/jekyll_post_generator.sh'
+# alias qak='/usr/bin/nano /home/quid/.bin/jekyll_post_generator.sh'
+# alias qan='cp ~/Git/doc/template_post.md ~/Git/quid-agis.github.io/_posts/ && nano ~/Git/quid-agis.github.io/_posts/template_post.md'
+# alias qap='cd /home/quid/Git/quid-agis.github.io/_posts && nano 2021-03-29-another-small-test.md'
+# alias qas='bundle exec jekyll serve --livereload'
+# alias qau='bundle update'
+# tr 12 <Digital_Asset_SDK.txt| sort | uniq -c | sort -nr > test_count.txt
 
 # EOF
