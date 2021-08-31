@@ -2,7 +2,7 @@
 
 alias ..='cd ..'
 alias ad='sudo apt install --dry-run'
-alias adn='sudo apt --no-recommend install --dry-run'
+alias adn='sudo apt install --no-install-recommends --dry-run'
 alias ag='sudo apt upgrade'
 alias agd='sudo apt upgrade --dry-run'
 alias agy='sudo apt upgrade -y'
@@ -22,10 +22,11 @@ alias cw='cd ~/Downloads && clear && ls'
 alias dis='/bin/bash /home/quid/.bin/daml_info_svc.sh'
 alias dl='dpkg --list | grep'
 alias dli='dpkg --list | grep ii | grep lib | less'
-## DPKG Focal
-# alias dgf='dpkg --list | grep ii > ~/Git/nix-notes/current_ubuntu_20_04_package.list'
-## DPKG HIRSUTE
+## DPKG Installed Focal
+alias dgf='dpkg --list | grep ii > ~/Git/nix-notes/current_ubuntu_20_04_package.list'
+## DPKG Installed Hirsute
 alias dgh='dpkg --list | grep ii > ~/Git/nix-notes/current_ubuntu_21_04_package.list'
+alias ff2='firefox http://192.168.1.160:8000'
 alias hack='cat /dev/urandom | od -x'
 alias hc='history -c && clear'
 alias hh='history | less'
@@ -48,10 +49,7 @@ alias nvb='cp -v ~/.vimrc ~/.vimrc.backup'
 alias nvv='cp -v ~/.vimrc.backup ~/.vimrc'
 alias nvvm='cp -v ~/.vimrc ~/.vimrc.master'
 alias nvnew='cp -v ~/.vimrc.new ~/.vimrc'
-alias pba='cd ~/Projects/bash && clear && pwd && ls'
-alias pda='cd ~/Projects/daml && clear && pwd && ls'
-alias pdd='cd ~/Projects/daml/doc && clear && pwd && ls'
-alias pha='cd ~/Projects/haskell && clear && pwd && ls'
+alias pav='/usr/bin/pavucontrol'
 alias pip='/usr/bin/pip3'
 alias pwh='python3 -m http.server 8000 --directory ~/'
 alias pws='python3 -m http.server 8000 --directory ~/Documents/'
@@ -83,7 +81,10 @@ alias rabupg='sudo /usr/local/rabbitmq_server-3.8.19/sbin/rabbitmq-upgrade'
 
 ## PROJECT commands
 
-alias pd='cd /home/quid/Projects/daml/ && clear && pwd && ls'
+alias pba='cd ~/Projects/bash && clear && pwd && ls'
+alias pdc='cd ~/Projects/daml/code && clear && pwd && ls'
+alias pdd='cd ~/Projects/daml/doc && clear && pwd && ls'
+alias pha='cd ~/Projects/haskell && clear && pwd && ls'
 alias pec='cd /home/quid/Projects/erlang/code && clear && pwd && ls'
 alias ped='cd /home/quid/Projects/erlang/doc && clear && pwd && ls'
 alias ph='cd /home/quid/Projects/haskell/ && clear && pwd && ls'
@@ -92,6 +93,7 @@ alias pja='cd /home/quid/Projects/api_tests && clear && ls'
 alias prc='cd ~/Projects/r/code && clear && ls -al'
 alias prd='cd ~/Projects/r/doc && clear && ls -al'
 alias pri='cd ~/Projects/r/image && clear && ls -al'
+alias pzx='cd /home/quid/Projects/zx && clear && pwd && ls'
 
 ## MOUNT commands
 
@@ -134,8 +136,9 @@ alias prr='ping -c 10 -i 0.25 google.co.nz'
 
 ## QUIDAGIS
 
-alias qab='cp -rv --remove-destination ~/Git/quid-agis.github.io/ ~/Documents/git/backup_quid-agis/'
-alias qad='rm -rf ~/Documents/git/backup_quid-agis/quid-agis.github.io/'
+# alias qab='cp -rv --remove-destination ~/Git/quid-agis.github.io/ ~/Documents/git/backup_quid-agis/'
+# alias qad='rm -rf ~/Documents/git/backup_quid-agis/quid-agis.github.io/'
+alias qap='/usr/bin/bash /home/quid/bin/r_blogdown_post_generator.sh'
 alias qaw='cd ~/Git/quid-agis.github.io && clear && pwd && ls -al'
 # alias qag='/bin/bash /home/quid/.bin/jekyll_post_generator.sh'
 # alias qak='/usr/bin/nano /home/quid/.bin/jekyll_post_generator.sh'
@@ -144,5 +147,6 @@ alias qaw='cd ~/Git/quid-agis.github.io && clear && pwd && ls -al'
 # alias qas='bundle exec jekyll serve --livereload'
 # alias qau='bundle update'
 # tr 12 <Digital_Asset_SDK.txt| sort | uniq -c | sort -nr > test_count.txt
+# clear && echo "Public IP is:" && curl ifconfig.me && echo ""
 
 # EOF
